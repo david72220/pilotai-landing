@@ -1,0 +1,98 @@
+---
+const navItems = [
+  { href: '/#probleme', label: 'Le problème' },
+  { href: '/#solution', label: 'La solution' },
+  { href: '/#demo', label: 'Démo' },
+  { href: '/#comparatif', label: 'Comparatif' },
+  { href: '/#faq', label: 'FAQ' },
+];
+---
+
+<header class="fixed top-0 left-0 w-full z-50">
+  <div class="relative mx-auto max-w-7xl px-4 pt-4 pb-8">
+    <nav class="relief-panel relief-2 fiber-pulse flex items-center justify-between px-5 py-3" aria-label="Menu principal">
+      <a href="/" class="relative z-10 flex items-center gap-2">
+        <span class="text-2xl font-bold gradient-text font-serif">PilotAI</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="relative z-10 hidden lg:flex items-center h-full">
+        {navItems.map((item) => (
+          <a href={item.href} class="h-full px-3 rounded-lg text-sm font-medium text-white/75 hover:text-white hover:bg-white/10 transition inline-flex items-center">
+            {item.label}
+          </a>
+        ))}
+      </div>
+
+      <a href="/#demo" class="btn-primary relative z-10 hidden lg:inline-flex">Demander une démo</a>
+
+      <!-- Mobile toggle -->
+      <button
+        type="button"
+        id="mobile-menu-toggle"
+        class="relative z-10 lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+        </svg>
+        <svg id="icon-close" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden mt-3 relief-panel relief-1 p-4 flex-col gap-1">
+      {navItems.map((item) => (
+        <a href={item.href} class="block px-4 py-3 rounded-lg text-base font-medium text-white/85 hover:text-white hover:bg-white/10 transition">
+          {item.label}
+        </a>
+      ))}
+      <a href="/#demo" class="btn-primary mt-3 justify-center text-center">Demander une démo</a>
+    </div>
+  </div>
+</header>
+
+<div class="h-24"></div>
+
+<script>
+  const btn = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  if (btn && menu && iconOpen && iconClose) {
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      menu.classList.toggle('flex', open);
+      iconOpen.classList.toggle('hidden', open);
+      iconClose.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    });
+
+    menu.querySelectorAll('a').forEach((a) =>
+      a.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Ouvrir le menu');
+      })
+    );
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+</script>
