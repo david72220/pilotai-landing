@@ -398,31 +398,138 @@ const jsonLd = {
 
     <!-- TARIF -->
     <section class="py-16 px-4 sm:px-6 lg:px-8 bg-alliance-dark-2">
-      <div class="max-w-3xl mx-auto text-center">
-        <p class="text-alliance-blue text-sm font-bold uppercase tracking-widest mb-3" data-reveal>Tarif</p>
-        <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mb-6" data-reveal>
-          Un modèle simple et transparent
-        </h2>
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12" data-reveal>
+          <p class="text-alliance-blue text-sm font-bold uppercase tracking-widest mb-3">Tarif</p>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
+            Choisissez votre formule
+          </h2>
+          <p class="text-white/60 text-lg max-w-2xl mx-auto">
+            Essai gratuit sans installation, puis passage à l'offre qui vous convient.
+            Les versions payantes incluent un accompagnement personnalisé à l'installation.
+          </p>
+        </div>
 
-        <div class="relief-panel relief-2 p-8 sm:p-10" data-reveal>
-          <div class="grid sm:grid-cols-2 gap-8 text-left">
-            <div>
-              <h3 class="font-display text-lg font-bold text-white mb-3">Essai 14 jours</h3>
-              <p class="text-white/60 text-sm mb-4">Toutes les fonctions Pro, gratuitement. Aucune carte bancaire requise.</p>
-              <p class="text-2xl font-bold text-alliance-blue">Gratuit</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Essai gratuit -->
+          <div class="relief-panel relief-1 p-6 flex flex-col" data-reveal>
+            <div class="mb-5">
+              <h3 class="font-display text-lg font-bold text-white mb-1">Essai gratuit</h3>
+              <p class="text-white/50 text-xs">14 jours · sans installation</p>
             </div>
-            <div>
-              <h3 class="font-display text-lg font-bold text-white mb-3">Abonnement</h3>
-              <p class="text-white/60 text-sm mb-4">Setup one-off + abonnement mensuel par client. Offre fixée ensemble.</p>
-              <p class="text-2xl font-bold text-white">Sur devis</p>
+            <p class="text-3xl font-bold text-alliance-blue mb-1">Gratuit</p>
+            <p class="text-white/40 text-xs mb-6">Aucune carte bancaire</p>
+
+            <p class="text-white/60 text-xs font-semibold uppercase tracking-wider mb-3">Inclus</p>
+            <ul class="space-y-2.5 text-sm text-white/70 mb-6 flex-1">
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-green-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Création de tâches, Kanban, liste</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-green-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Indicateur de retard</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-green-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Vues : mes tâches, calendrier, recherche</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-green-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Partage de projet (lecture seule)</li>
+            </ul>
+
+            <p class="text-white/40 text-xs font-semibold uppercase tracking-wider mb-3">Non inclus</p>
+            <ul class="space-y-2 text-sm text-white/35 mb-6">
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> Ingestion Notta, Gmail, vocal</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> IA souveraine (Ollama)</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> Routine matinale, notifications</li>
+            </ul>
+
+            <a href="#demo" class="btn-secondary text-center text-sm py-3 mt-auto">Démarrer l'essai</a>
+          </div>
+
+          <!-- Base -->
+          <div class="relief-panel relief-1 p-6 flex flex-col" data-reveal>
+            <div class="mb-5">
+              <h3 class="font-display text-lg font-bold text-white mb-1">Base</h3>
+              <p class="text-white/50 text-xs">Pour démarrer avec l'IA souveraine</p>
             </div>
+            <p class="text-3xl font-bold text-white mb-1">Sur devis</p>
+            <p class="text-white/40 text-xs mb-6">Setup one-off + abonnement mensuel</p>
+
+            <p class="text-white/60 text-xs font-semibold uppercase tracking-wider mb-3">Tout l'essai +</p>
+            <ul class="space-y-2.5 text-sm text-white/70 mb-6 flex-1">
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">IA souveraine</strong> (Ollama local)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Ingestion Notta</strong> (réunions → tâches)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Ingestion Gmail</strong> (mails → tâches)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Dictée vocale</strong> (PWA + Telegram)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Routine matinale</strong> (push 8h)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Synthèse de réunion</strong> (next steps auto)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Routage IA par sensibilité</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Commentaires, @mentions, PJ</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Notifications email + in-app</li>
+            </ul>
+
+            <p class="text-white/40 text-xs mb-4">Inclut l'installation et la configuration de vos intégrations par notre équipe.</p>
+
+            <a href="#demo" class="btn-primary text-center text-sm py-3 mt-auto">Demander un devis</a>
           </div>
-          <div class="mt-8">
-            <a href="#demo" class="btn-primary text-base px-8 py-4">
-              Demander un devis
-              <svg class="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
+
+          <!-- Pro -->
+          <div class="relief-panel relief-2 p-6 flex flex-col relative ring-2 ring-alliance-blue/40" data-reveal>
+            <!-- Badge recommandé -->
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+              <span class="px-3 py-1 rounded-full bg-alliance-blue text-white text-xs font-bold uppercase tracking-wider whitespace-nowrap">Recommandé</span>
+            </div>
+
+            <div class="mb-5">
+              <h3 class="font-display text-lg font-bold text-white mb-1">Pro</h3>
+              <p class="text-white/50 text-xs">Pour piloter vos projets en profondeur</p>
+            </div>
+            <p class="text-3xl font-bold text-alliance-blue mb-1">Sur devis</p>
+            <p class="text-white/40 text-xs mb-6">Setup one-off + abonnement mensuel</p>
+
+            <p class="text-white/60 text-xs font-semibold uppercase tracking-wider mb-3">Tout Base +</p>
+            <ul class="space-y-2.5 text-sm text-white/70 mb-6 flex-1">
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Priorité</strong> et sous-tâches</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Tags multi-sélection</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Suivi du temps</strong> (estimé vs passé)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Barre de progression</strong> par projet</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Charge de travail</strong> par utilisateur</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Tâches récurrentes</strong> (cron auto)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Cascade sous-tâches (auto-done)</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Rapport hebdo IA</strong> par projet</span></li>
+            </ul>
+
+            <p class="text-white/40 text-xs mb-4">Inclut l'installation, la configuration et un suivi d'adoption.</p>
+
+            <a href="#demo" class="btn-primary text-center text-sm py-3 mt-auto">Demander un devis</a>
           </div>
+
+          <!-- Sur-mesure -->
+          <div class="relief-panel relief-1 p-6 flex flex-col" data-reveal>
+            <div class="mb-5">
+              <h3 class="font-display text-lg font-bold text-white mb-1">Sur-mesure</h3>
+              <p class="text-white/50 text-xs">Modules avancés à la carte</p>
+            </div>
+            <p class="text-3xl font-bold text-white mb-1">Sur devis</p>
+            <p class="text-white/40 text-xs mb-6">Pro + modules activés au cas par cas</p>
+
+            <p class="text-white/60 text-xs font-semibold uppercase tracking-wider mb-3">Tout Pro + modules ⚙️</p>
+            <ul class="space-y-2.5 text-sm text-white/70 mb-6 flex-1">
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Dépendances</strong> entre tâches</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Budget consommé</strong> par projet</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Score d'urgence Eisenhower</strong> (tri auto)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Auto-planification</strong> (façon Motion)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Relances client auto</strong> (IA)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Analyse de sentiment</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Agent Scrum Master vocal</strong></span></li>
+            </ul>
+
+            <p class="text-white/40 text-xs mb-4">Modules activés individuellement selon vos besoins. Accompagnement renforcé inclus.</p>
+
+            <a href="#demo" class="btn-secondary text-center text-sm py-3 mt-auto">Discuter de mon besoin</a>
+          </div>
+        </div>
+
+        <!-- Note sous les cartes -->
+        <div class="max-w-3xl mx-auto mt-10 text-center">
+          <p class="text-white/50 text-sm leading-relaxed">
+            <strong class="text-white/70">Pourquoi "sur devis" ?</strong> Chaque entreprise a des besoins différents.
+            Les versions payantes nécessitent une installation manuelle de notre équipe (intégrations Notta, Gmail, IA locale, Telegram).
+            On évalue ensemble la configuration adaptée à votre métier lors d'un appel de 30 min.
+          </p>
         </div>
       </div>
     </section>
@@ -473,7 +580,7 @@ const jsonLd = {
               Combien ça coûte ?
               <svg class="w-5 h-5 text-alliance-blue transition-transform group-open:rotate-180 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </summary>
-            <p class="mt-4 text-white/70 leading-relaxed">L'essai de 14 jours est gratuit, avec toutes les fonctions Pro. Ensuite, le modèle est un setup one-off + abonnement mensuel par client. Le prix dépend du nombre d'utilisateurs et des fonctions activées. Contactez-nous pour un devis adapté à votre entreprise.</p>
+            <p class="mt-4 text-white/70 leading-relaxed">L'essai de 14 jours est gratuit : vous testez les fonctions de base (tâches, Kanban, partage) sans installation. Ensuite, trois offres payantes sont disponibles — Base, Pro et Sur-mesure — chacune avec un setup one-off + abonnement mensuel. Les versions payantes nécessitent une installation manuelle de notre équipe (IA locale, intégrations Notta/Gmail/Telegram). Le prix dépend du nombre d'utilisateurs et des fonctions activées. Contactez-nous pour un devis adapté à votre entreprise.</p>
           </details>
         </div>
       </div>
