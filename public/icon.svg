@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="PilotAI">
+  <defs>
+    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="70%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="#060F1A"/>
+  <g transform="translate(80,80) scale(0.92)">
+    <polygon points="0,-64 55.4,-32 55.4,32 0,64 -55.4,32 -55.4,-32"
+             fill="none" stroke="url(#aurora)" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M -14 34 L -14 -30 Q -14 -38 -6 -38 L 14 -38 Q 34 -38 34 -18 Q 34 2 14 2 L 0 2"
+          fill="none" stroke="url(#aurora)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-14" cy="34" r="7" fill="#22D3EE"/>
+  </g>
+</svg>

@@ -9,7 +9,7 @@ const jsonLd = {
   "name": "PilotAI",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web, PWA, Telegram",
-  "description": "SaaS de gestion de projet avec IA souveraine, ingestion de réunions et pilotage vocal. Vos données restent en Europe.",
+  "description": "SaaS de gestion de projet avec enregistrement automatique des réunions et compte rendu souverain : l'IA tourne en France, l'audio n'est jamais envoyé à un tiers et il est détruit après validation.",
   "offers": {
     "@type": "Offer",
     "price": "Sur devis",
@@ -23,8 +23,8 @@ const jsonLd = {
 ---
 
 <Layout
-  title="PilotAI — Gestion de projet avec IA souveraine"
-  description="PilotAI : le logiciel de gestion de projet qui combine IA souveraine (modèle local), ingestion des réunions Notta et pilotage vocal. Vos données restent en Europe. Lancement octobre 2026."
+  title="PilotAI — Chaque réunion devient des actions, automatiquement"
+  description="PilotAI enregistre vos réunions automatiquement et en tire un compte rendu souverain : transcription en France, audio détruit après validation, actions proposées à l'humain qui décide. Lancement octobre 2026."
   jsonLd={jsonLd}
 >
   <Header />
@@ -42,13 +42,14 @@ const jsonLd = {
             </div>
 
             <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" data-hero-anim="title">
-              <span class="hero-line">Gérez vos projets avec une IA</span><br class="hidden sm:block">
-              <span class="gradient-text hero-line">qui reste chez vous</span>
+              <span class="hero-line">Chaque réunion devient des actions.</span><br class="hidden sm:block">
+              <span class="gradient-text hero-line">Automatiquement.</span>
             </h1>
 
             <p class="text-lg sm:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed" data-hero-anim="lead">
-              PilotAI combine IA souveraine, ingestion de réunions et pilotage vocal.
-              Vos données restent en Europe. L'IA tourne sur votre serveur par défaut. Aucune fuite.
+              Cliquez « Rejoindre la visio », PilotAI enregistre tout seul. La transcription tourne sur
+              notre infrastructure en France — jamais chez un tiers — et l'audio est détruit dès que vous
+              validez le compte rendu. Vous décidez de chaque action proposée, rien ne se crée sans vous.
             </p>
 
             <div class="flex flex-col sm:flex-row items-start gap-4" data-hero-anim="cta">
@@ -133,35 +134,35 @@ const jsonLd = {
         <div class="text-center mb-12" data-reveal>
           <p class="text-red-400 text-sm font-bold uppercase tracking-widest mb-3">Le problème</p>
           <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
-            Asana, Monday, ClickUp : vos données partent aux US
+            Vos réunions se perdent — ou partent chez un tiers américain
           </h2>
           <p class="text-white/60 text-lg max-w-2xl mx-auto">
-            Les outils de gestion de projet envoient vos tâches, vos réunions et vos données métier
-            vers des serveurs américains. L'IA qu'ils proposent est une boîte noire.
+            Sans automatisme, l'enregistrement est oublié, les décisions ne ressortent que dans la tête
+            de ceux qui étaient présents, et le seul outil qui pourrait aider envoie votre audio aux États-Unis.
           </p>
         </div>
 
         <div class="grid sm:grid-cols-3 gap-6">
           <div class="relief-panel relief-1 p-6 text-center" data-reveal>
             <div class="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center mx-auto mb-4">
-              <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+              <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
             </div>
-            <h3 class="font-semibold text-white mb-2">Fuite de données</h3>
-            <p class="text-sm text-white/60">Vos tâches, commentaires et réunions transitent par des serveurs US. Sous-traitants à déclarer dans chaque DPA.</p>
+            <h3 class="font-semibold text-white mb-2">On oublie d'enregistrer</h3>
+            <p class="text-sm text-white/60">La réunion démarre, personne ne pense à lancer l'enregistrement. Le compte rendu, s'il existe, est fait de mémoire.</p>
           </div>
           <div class="relief-panel relief-1 p-6 text-center" data-reveal>
             <div class="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center mx-auto mb-4">
               <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
-            <h3 class="font-semibold text-white mb-2">IA boîte noire</h3>
-            <p class="text-sm text-white/60">Vous ne savez pas quel modèle IA traite vos données, ni où elles vont après. Pas de contrôle sur la sensibilité.</p>
+            <h3 class="font-semibold text-white mb-2">Les décisions se perdent</h3>
+            <p class="text-sm text-white/60">Ce qui a été décidé reste dans la tête des participants. Personne ne le retranscrit en tâches, alors ça ne se fait pas.</p>
           </div>
           <div class="relief-panel relief-1 p-6 text-center" data-reveal>
             <div class="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center mx-auto mb-4">
-              <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.375c0 .621-.504 1.125-1.125 1.125h-1.5A1.125 1.125 0 019 18.375V15"/></svg>
+              <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
             </div>
-            <h3 class="font-semibold text-white mb-2">Pas faits pour l'oral</h3>
-            <p class="text-sm text-white/60">Aucun outil ne capte vos réunions ou ne vous laisse dicter vos tâches en marchant. Tout est manuel.</p>
+            <h3 class="font-semibold text-white mb-2">Vos réunions chez un tiers américain</h3>
+            <p class="text-sm text-white/60">Les outils de transcription du marché exigent un bot participant et un abonnement IA par utilisateur, et envoient votre audio outre-Atlantique.</p>
           </div>
         </div>
       </div>
@@ -173,57 +174,92 @@ const jsonLd = {
         <div class="text-center mb-12" data-reveal>
           <p class="text-alliance-blue text-sm font-bold uppercase tracking-widest mb-3">La solution</p>
           <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
-            Trois piliers qui changent tout
+            Un système d'enregistrement natif, pas un bot qui s'invite
           </h2>
         </div>
 
         <div class="grid lg:grid-cols-3 gap-8">
+          <div class="relief-panel relief-2 p-8 lg:col-span-3" data-reveal>
+            <div class="w-14 h-14 rounded-xl bg-alliance-blue/20 flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Auto-enregistrement des réunions</h3>
+            <p class="text-white/60 text-sm leading-relaxed mb-4">
+              Cliquez « Rejoindre la visio » : l'enregistrement démarre tout seul, aucun bot tiers à inviter.
+              Une fenêtre flottante reste au premier plan — même en partage d'écran — avec la durée,
+              « Fin de la réunion », « capter la visio » et « Prolonger 30 min » si ça déborde.
+            </p>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Démarrage automatique, aucun bot participant</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Fenêtre flottante toujours visible</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Audio découpé et envoyé au fil de l'eau — une coupure réseau ne perd que 30s</li>
+            </ul>
+          </div>
+
           <div class="relief-panel relief-2 p-8" data-reveal>
             <div class="w-14 h-14 rounded-xl bg-alliance-blue/20 flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
             </div>
-            <h3 class="font-display text-xl font-bold text-white mb-3">IA souveraine</h3>
+            <h3 class="font-display text-xl font-bold text-white mb-3">CR souverain</h3>
             <p class="text-white/60 text-sm leading-relaxed mb-4">
-              Un modèle IA local (Ollama) tourne sur votre serveur par défaut. Vos données confidentielles
-              ne quittent jamais votre infrastructure. L'IA externe (Gemini) n'est utilisée qu'avec votre
-              consentement explicite, pour les flux non sensibles.
+              La transcription tourne sur l'infrastructure Alliance Digitale, en France. L'audio ne part
+              jamais chez un tiers — et il est détruit dès que vous validez le compte rendu.
             </p>
             <ul class="space-y-2 text-sm text-white/70">
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Modèle local Ollama par défaut</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Routage par niveau de sensibilité</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Données en UE (Supabase Francfort)</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Transcription IA en France</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Audio détruit après validation du CR</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Vous relisez et corrigez avant de valider</li>
             </ul>
           </div>
 
           <div class="relief-panel relief-2 p-8" data-reveal>
             <div class="w-14 h-14 rounded-xl bg-alliance-blue/20 flex items-center justify-center mb-6">
-              <svg class="w-7 h-7 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.375c0 .621-.504 1.125-1.125 1.125h-1.5A1.125 1.125 0 019 18.375V15m6.75-6V4.875c0-.621-.504-1.125-1.125-1.125H8.25c-.621 0-1.125.504-1.125 1.125V9m6.75 0H8.25"/></svg>
+              <svg class="w-7 h-7 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
-            <h3 class="font-display text-xl font-bold text-white mb-3">Ingestion des réunions</h3>
+            <h3 class="font-display text-xl font-bold text-white mb-3">De la parole aux actions</h3>
             <p class="text-white/60 text-sm leading-relaxed mb-4">
-              Vos transcriptions Notta sont automatiquement ingérées. PilotAI extrait les next steps
-              et les transforme en tâches assignées et datées. Fini le copier-coller manuel.
+              L'IA propose des tâches, réunions ou idées extraites du compte rendu, avec un pilote suggéré.
+              Rien ne se crée automatiquement : vous validez, corrigez ou rejetez chaque proposition.
             </p>
             <ul class="space-y-2 text-sm text-white/70">
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Intégration Notta native</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Extraction automatique des next steps</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Ingestion Gmail → tâches aussi</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Extraction tâches / réunions / idées</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Pilote suggéré, jamais imposé</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Réservé à l'organisateur de la réunion</li>
             </ul>
           </div>
 
           <div class="relief-panel relief-2 p-8" data-reveal>
             <div class="w-14 h-14 rounded-xl bg-alliance-blue/20 flex items-center justify-center mb-6">
-              <svg class="w-7 h-7 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.375c0 .621-.504 1.125-1.125 1.125h-1.5A1.125 1.125 0 019 18.375V15m6.75-6V4.875c0-.621-.504-1.125-1.125-1.125H8.25c-.621 0-1.125.504-1.125 1.125V9m6.75 0H8.25"/></svg>
+              <svg class="w-7 h-7 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
             </div>
-            <h3 class="font-display text-xl font-bold text-white mb-3">Pilotage vocal</h3>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Externes sans compte</h3>
             <p class="text-white/60 text-sm leading-relaxed mb-4">
-              Dictée de tâches en marchant via la PWA ou Telegram. L'IA locale comprend l'intention,
-              crée la tâche, l'assigne et la date. Push matinal automatisé à 8h00.
+              Vos clients et fournisseurs sont invités par simple email : le créneau s'ajoute à leur agenda
+              (fichier ICS), avec un lien pour répondre. Le compte rendu se partage en un clic, sans compte à créer.
             </p>
             <ul class="space-y-2 text-sm text-white/70">
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> PWA installable (zéro install)</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Bot Telegram bidirectionnel</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Brief matinal auto (résumé du jour)</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Invitation par email, zéro compte requis</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Créneau ICS + lien RSVP</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> CR partageable en un clic</li>
+            </ul>
+          </div>
+
+          <div class="relief-panel relief-2 p-8 lg:col-span-3" data-reveal>
+            <div class="w-14 h-14 rounded-xl bg-alliance-blue/20 flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.375c0 .621-.504 1.125-1.125 1.125h-1.5A1.125 1.125 0 019 18.375V15m6.75-6V4.875c0-.621-.504-1.125-1.125-1.125H8.25c-.621 0-1.125.504-1.125 1.125V9m6.75 0H8.25"/></svg>
+            </div>
+            <h3 class="font-display text-xl font-bold text-white mb-3">Le socle de gestion de projet</h3>
+            <p class="text-white/60 text-sm leading-relaxed mb-4">
+              Tout ce qu'il faut autour de la réunion : projets et arbres de tâches illimités, groupes par
+              échéance colorés, assistant vocal (créer, terminer, reporter une tâche, même inviter un externe
+              à la voix), notifications réglables par email, flux calendrier Google/Outlook, charge d'équipe,
+              et un RGPD natif (export, effacement) sur une base multi-tenant cloisonnée par RLS.
+            </p>
+            <ul class="grid sm:grid-cols-2 gap-2 text-sm text-white/70">
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Assistant vocal, même pour inviter un externe</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Flux calendrier Google / Outlook</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Charge d'équipe par personne</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> RGPD natif : export et effacement</li>
             </ul>
           </div>
         </div>
@@ -296,42 +332,42 @@ const jsonLd = {
             </thead>
             <tbody class="divide-y divide-white/5">
               <tr>
-                <td class="p-4 text-white/70">Souveraineté des données (UE)</td>
-                <td class="text-center p-4 text-green-400">✓ Supabase UE</td>
+                <td class="p-4 text-white/70">Enregistrement de réunion</td>
+                <td class="text-center p-4 text-green-400">✓ Automatique, aucun bot</td>
+                <td class="text-center p-4 text-red-400">✗ Bot participant à inviter</td>
+                <td class="text-center p-4 text-red-400">✗ Bot participant à inviter</td>
+                <td class="text-center p-4 text-red-400">✗ Bot participant à inviter</td>
+              </tr>
+              <tr>
+                <td class="p-4 text-white/70">Où va l'audio</td>
+                <td class="text-center p-4 text-green-400">✓ France, détruit après validation</td>
                 <td class="text-center p-4 text-red-400">✗ Serveurs US</td>
                 <td class="text-center p-4 text-red-400">✗ Serveurs US</td>
                 <td class="text-center p-4 text-red-400">✗ Serveurs US</td>
               </tr>
               <tr>
-                <td class="p-4 text-white/70">IA locale (modèle sur votre serveur)</td>
-                <td class="text-center p-4 text-green-400">✓ Ollama</td>
+                <td class="p-4 text-white/70">Actions extraites du CR</td>
+                <td class="text-center p-4 text-green-400">✓ Proposées, validées par vous</td>
                 <td class="text-center p-4 text-red-400">✗</td>
                 <td class="text-center p-4 text-red-400">✗</td>
                 <td class="text-center p-4 text-red-400">✗</td>
               </tr>
               <tr>
-                <td class="p-4 text-white/70">Ingestion des réunions (Notta)</td>
+                <td class="p-4 text-white/70">Externes sans compte (ICS + RSVP)</td>
                 <td class="text-center p-4 text-green-400">✓ Natif</td>
                 <td class="text-center p-4 text-red-400">✗</td>
                 <td class="text-center p-4 text-red-400">✗</td>
                 <td class="text-center p-4 text-red-400">✗</td>
               </tr>
               <tr>
-                <td class="p-4 text-white/70">Pilotage vocal (PWA + Telegram)</td>
-                <td class="text-center p-4 text-green-400">✓ Natif</td>
-                <td class="text-center p-4 text-red-400">✗</td>
-                <td class="text-center p-4 text-red-400">✗</td>
-                <td class="text-center p-4 text-red-400">✗</td>
+                <td class="p-4 text-white/70">Abonnement IA par utilisateur</td>
+                <td class="text-center p-4 text-green-400">✓ Aucun</td>
+                <td class="text-center p-4 text-red-400">✗ Requis</td>
+                <td class="text-center p-4 text-red-400">✗ Requis</td>
+                <td class="text-center p-4 text-red-400">✗ Requis</td>
               </tr>
               <tr>
-                <td class="p-4 text-white/70">Routage IA par sensibilité</td>
-                <td class="text-center p-4 text-green-400">✓ Confidentiel/Standard</td>
-                <td class="text-center p-4 text-red-400">✗</td>
-                <td class="text-center p-4 text-red-400">✗</td>
-                <td class="text-center p-4 text-red-400">✗</td>
-              </tr>
-              <tr>
-                <td class="p-4 text-white/70">RGPD natif (RLS 3 niveaux)</td>
+                <td class="p-4 text-white/70">RGPD natif (RLS multi-tenant)</td>
                 <td class="text-center p-4 text-green-400">✓ Conçu pour</td>
                 <td class="text-center p-4 text-amber-400">~ Partiel</td>
                 <td class="text-center p-4 text-amber-400">~ Partiel</td>
@@ -431,9 +467,9 @@ const jsonLd = {
 
             <p class="text-white/40 text-xs font-semibold uppercase tracking-wider mb-3">Non inclus</p>
             <ul class="space-y-2 text-sm text-white/35 mb-6">
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> Ingestion Notta, Gmail, vocal</li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> IA souveraine (Ollama)</li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> Routine matinale, notifications</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> Enregistreur de réunions natif</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> Extraction d'actions par IA</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white/20 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg> Assistant vocal, notifications</li>
             </ul>
 
             <a href="#demo" class="btn-secondary text-center text-sm py-3 mt-auto">Démarrer l'essai</a>
@@ -443,22 +479,21 @@ const jsonLd = {
           <div class="relief-panel relief-1 p-6 flex flex-col" data-reveal>
             <div class="mb-5">
               <h3 class="font-display text-lg font-bold text-white mb-1">Base</h3>
-              <p class="text-white/50 text-xs">Pour démarrer avec l'IA souveraine</p>
+              <p class="text-white/50 text-xs">Pour démarrer avec l'enregistreur de réunions</p>
             </div>
             <p class="text-3xl font-bold text-white mb-1">Sur devis</p>
             <p class="text-white/40 text-xs mb-6">Setup one-off + abonnement mensuel</p>
 
             <p class="text-white/60 text-xs font-semibold uppercase tracking-wider mb-3">Tout l'essai +</p>
             <ul class="space-y-2.5 text-sm text-white/70 mb-6 flex-1">
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">IA souveraine</strong> (Ollama local)</span></li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Ingestion Notta</strong> (réunions → tâches)</span></li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Ingestion Gmail</strong> (mails → tâches)</span></li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Dictée vocale</strong> (PWA + Telegram)</span></li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Routine matinale</strong> (push 8h)</span></li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Synthèse de réunion</strong> (next steps auto)</span></li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Routage IA par sensibilité</li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Commentaires, @mentions, PJ</li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Notifications email + in-app</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Enregistreur de réunions natif</strong> (fenêtre flottante)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">CR souverain</strong> (transcription France, audio détruit)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Actions extraites</strong> du CR, à valider une par une</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Externes sans compte</strong> (email, ICS, RSVP)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Assistant vocal</strong> (créer, terminer, reporter, réunions)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span><strong class="text-white">Flux calendrier</strong> Google / Outlook</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Notifications réglables par email</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-alliance-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> RGPD natif (export, effacement)</li>
             </ul>
 
             <p class="text-white/40 text-xs mb-4">Inclut l'installation et la configuration de vos intégrations par notre équipe.</p>
@@ -527,7 +562,7 @@ const jsonLd = {
         <div class="max-w-3xl mx-auto mt-10 text-center">
           <p class="text-white/50 text-sm leading-relaxed">
             <strong class="text-white/70">Pourquoi "sur devis" ?</strong> Chaque entreprise a des besoins différents.
-            Les versions payantes nécessitent une installation manuelle de notre équipe (intégrations Notta, Gmail, IA locale, Telegram).
+            Les versions payantes nécessitent une installation accompagnée par notre équipe.
             On évalue ensemble la configuration adaptée à votre métier lors d'un appel de 30 min.
           </p>
         </div>
@@ -545,34 +580,34 @@ const jsonLd = {
         <div class="space-y-4">
           <details class="group relief-panel p-6 cursor-pointer" open data-reveal>
             <summary class="flex items-center justify-between text-white font-semibold text-lg list-none">
-              Mes données partent-elles à l'extérieur ?
+              Où vont mes enregistrements ?
               <svg class="w-5 h-5 text-alliance-blue transition-transform group-open:rotate-180 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </summary>
-            <p class="mt-4 text-white/70 leading-relaxed">Non. Par défaut, l'IA tourne sur votre serveur (modèle local Ollama). Vos données sont stockées en UE (Supabase Francfort). L'IA externe (Gemini) n'est utilisée qu'avec votre consentement explicite, pour les flux non sensibles.</p>
+            <p class="mt-4 text-white/70 leading-relaxed">Nulle part chez un tiers. L'audio est découpé et envoyé au fil de l'eau vers l'infrastructure Alliance Digitale, en France, où tourne la transcription. Vous relisez et corrigez le compte rendu, puis « Valider le compte rendu » détruit l'audio — le CR fait foi.</p>
           </details>
 
           <details class="group relief-panel p-6 cursor-pointer" data-reveal>
             <summary class="flex items-center justify-between text-white font-semibold text-lg list-none">
-              Ça marche sans internet ?
+              Mes clients doivent-ils créer un compte ?
               <svg class="w-5 h-5 text-alliance-blue transition-transform group-open:rotate-180 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </summary>
-            <p class="mt-4 text-white/70 leading-relaxed">La PWA est installable sur votre téléphone ou ordinateur. L'IA locale fonctionne sans connexion internet. La synchronisation se fait quand la connexion revient.</p>
+            <p class="mt-4 text-white/70 leading-relaxed">Non. Un client ou un fournisseur invité par email reçoit le créneau directement dans son agenda (fichier ICS) et un lien pour répondre, sans jamais créer de compte. Le compte rendu se partage aussi en un clic, par email.</p>
           </details>
 
           <details class="group relief-panel p-6 cursor-pointer" data-reveal>
             <summary class="flex items-center justify-between text-white font-semibold text-lg list-none">
-              Je peux quitter Asana ou Monday ?
+              L'IA décide-t-elle seule ?
               <svg class="w-5 h-5 text-alliance-blue transition-transform group-open:rotate-180 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </summary>
-            <p class="mt-4 text-white/70 leading-relaxed">Oui. L'import de vos projets depuis Asana, Monday ou Trello est prévu. On vous accompagne dans la migration lors de l'onboarding.</p>
+            <p class="mt-4 text-white/70 leading-relaxed">Jamais. Après validation du compte rendu, l'IA propose des tâches, réunions ou idées avec un pilote suggéré — visibles de l'organisateur seul, dans « À valider ». Rien ne se crée sans un clic humain : vous validez, corrigez ou rejetez chaque proposition une par une.</p>
           </details>
 
           <details class="group relief-panel p-6 cursor-pointer" data-reveal>
             <summary class="flex items-center justify-between text-white font-semibold text-lg list-none">
-              C'est quoi l'IA souveraine ?
+              Puis-je quitter mon outil actuel ?
               <svg class="w-5 h-5 text-alliance-blue transition-transform group-open:rotate-180 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </summary>
-            <p class="mt-4 text-white/70 leading-relaxed">L'IA souveraine, c'est un modèle d'intelligence artificielle qui tourne sur votre propre serveur, pas dans le cloud d'un géant américain. Vos données ne quittent jamais votre infrastructure. C'est l'opposé de ChatGPT, où vos textes partent vers OpenAI.</p>
+            <p class="mt-4 text-white/70 leading-relaxed">C'est le principe : un socle de gestion de projet complet (projets, arbres de tâches, calendrier, charge d'équipe) pensé pour remplacer un Asana ou un Monday, avec en plus l'enregistrement de réunion qu'aucun des deux ne propose. On vous accompagne à l'installation.</p>
           </details>
 
           <details class="group relief-panel p-6 cursor-pointer" data-reveal>
@@ -580,7 +615,7 @@ const jsonLd = {
               Combien ça coûte ?
               <svg class="w-5 h-5 text-alliance-blue transition-transform group-open:rotate-180 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </summary>
-            <p class="mt-4 text-white/70 leading-relaxed">L'essai de 14 jours est gratuit : vous testez les fonctions de base (tâches, Kanban, partage) sans installation. Ensuite, trois offres payantes sont disponibles — Base, Pro et Sur-mesure — chacune avec un setup one-off + abonnement mensuel. Les versions payantes nécessitent une installation manuelle de notre équipe (IA locale, intégrations Notta/Gmail/Telegram). Le prix dépend du nombre d'utilisateurs et des fonctions activées. Contactez-nous pour un devis adapté à votre entreprise.</p>
+            <p class="mt-4 text-white/70 leading-relaxed">L'essai de 14 jours est gratuit, sans installation. Ensuite, trois offres sur devis — Base, Pro et Sur-mesure — chacune avec une installation accompagnée par notre équipe. Le prix dépend du nombre d'utilisateurs et des modules activés. Contactez-nous pour un devis adapté à votre entreprise.</p>
           </details>
         </div>
       </div>
@@ -590,7 +625,7 @@ const jsonLd = {
     <section class="py-20 px-4 sm:px-6 lg:px-8 bg-alliance-dark-2">
       <div class="max-w-4xl mx-auto text-center" data-reveal>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-6">
-          Prêt à gérer vos projets avec une IA souveraine ?
+          Prêt à ne plus perdre une seule décision de réunion ?
         </h2>
         <p class="text-white/70 text-lg mb-8">
           PilotAI arrive en octobre 2026. Demandez votre démo personnalisée dès maintenant.

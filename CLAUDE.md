@@ -85,7 +85,7 @@ Fonts en **self-host** via `@fontsource` (pas de Google Fonts CDN).
 | 4 | Démo | `#demo` | Placeholder vidéo + form de capture email (placeholder Formspree, à remplacer par Brevo) |
 | 5 | Comparatif | `#comparatif` | Tableau PilotAI vs Asana/Monday/ClickUp (7 critères) |
 | 6 | Témoignages | — | 3 placeholders (remplir post tests utilisateurs septembre) |
-| 7 | Tarif | — | Essai 14j gratuit + sur devis (B2B) |
+| 7 | Tarif | — | 4 offres en cartes : Essai gratuit (14j, fonctions restreintes sans installation) / Base (IA souveraine + Notta + Gmail + vocal + routine + notifications) / Pro recommandé (Base + priorité, sous-tâches, suivi temps, progression, charge, récurrences, rapport IA) / Sur-mesure (Pro + modules à la carte : dépendances, budget, Eisenhower, auto-planif, relances, sentiment, Scrum Master). Note explicative sous les cartes : installation manuelle pour versions payantes. |
 | 8 | FAQ | `#faq` | 5 questions : données extérieures / offline / quitter Asana / IA souveraine / prix |
 | 9 | CTA final | — | "Prêt à gérer vos projets avec une IA souveraine ?" + bouton démo |
 
@@ -139,7 +139,7 @@ Le projet Vercel est détecté automatiquement comme Astro (Build Command: `astr
 | Q2 | Support présentation | Landing page indépendante (projet séparé) | 27/07/2026 |
 | Q5 | Techno landing | Astro 6 dédié (pas Framer) — validé à l'exécution | 27/07/2026 |
 | Q7 | Domaine | `pilotai.alliance-digitale.fr` (sous-domaine, `pilotai.fr` pris) | 27/07/2026 |
-| Q9 | Tarif affiché | "Sur devis" (B2B, pas de self-serve) | 27/07/2026 |
+| Q9 | Tarif affiché | 4 offres : Essai gratuit (14j, fonctions restreintes) / Base / Pro (recommandé) / Sur-mesure. Versions payantes sur devis (installation manuelle) | 27/07/2026 |
 
 ---
 
