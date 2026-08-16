@@ -274,19 +274,24 @@ const jsonLd = {
           Voyez PilotAI en action
         </h2>
         <p class="text-white/60 text-lg mb-10 max-w-2xl mx-auto" data-reveal>
-          La vidéo démo arrive en septembre. En attendant, demandez votre démo personnalisée :
-          on regarde ensemble comment PilotAI s'adapte à votre entreprise.
+          Une minute pour voir ce que PilotAI change au quotidien. Et si vous voulez aller
+          plus loin, demandez votre démo personnalisée : on regarde ensemble comment
+          PilotAI s'adapte à votre entreprise.
         </p>
 
-        <div class="relief-panel relief-2 p-8 sm:p-12 mb-10" data-reveal>
-          <div class="w-20 h-20 rounded-full bg-alliance-blue/20 flex items-center justify-center mx-auto mb-6">
-            <svg class="w-10 h-10 text-alliance-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 00-.57.338l-.001.002-.002.004-.004.007-.006.011-.018.032-.042.064a23.76 23.76 0 01-.502.784c-.36.528-.853 1.176-1.418 1.632a8.345 8.345 0 01-2.86 1.63 8.187 8.187 0 01-3.338.293 8.357 8.357 0 01-3.236-1.108 8.322 8.322 0 01-2.526-2.275 8.36 8.36 0 01-1.562-3.257 8.343 8.343 0 01-.213-3.473 8.36 8.36 0 011.254-3.272 8.346 8.346 0 012.59-2.552 8.343 8.343 0 013.37-1.275 8.36 8.36 0 013.473.214 8.353 8.353 0 013.03 1.65 8.357 8.357 0 011.93 2.803c.034.078.066.157.097.236l.018.044.004.01.001.003.001.002a.375.375 0 00.57.338z"/>
-            </svg>
-          </div>
-          <p class="text-white/70 text-lg mb-2">Vidéo démo à venir</p>
-          <p class="text-white/40 text-sm mb-6">Disponible en septembre 2026</p>
+        <div id="video" class="relief-panel relief-2 p-3 sm:p-4 mb-10 scroll-mt-24" data-reveal>
+          <video
+            controls
+            preload="metadata"
+            playsinline
+            class="w-full rounded-xl"
+            style="aspect-ratio: 1816 / 1080; background:#070d18"
+            title="PilotAI — présentation en 1 minute"
+          >
+            <source src="/videos/pilotai-presentation.mp4" type="video/mp4" />
+            Votre navigateur ne lit pas les vidéos HTML5 —
+            <a href="/videos/pilotai-presentation.mp4">télécharger la vidéo</a>.
+          </video>
         </div>
 
         <div class="relief-panel relief-2 p-8 max-w-xl mx-auto" data-reveal>
