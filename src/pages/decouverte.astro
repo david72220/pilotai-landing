@@ -1,0 +1,113 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const videos = [
+  {
+    n: 1,
+    titre: "Découverte : tableau de bord et idées",
+    duree: "4 min 15",
+    texte: "Le point de départ de chaque matin : tâches en retard, tâches du jour, avancement des projets et notifications réglables finement. Puis le tableau des idées — des post-its privés, classés par thèmes, qui deviennent des tâches planifiées quand elles sont mûres.",
+  },
+  {
+    n: 2,
+    titre: "Les tâches personnelles",
+    duree: "3 min 45",
+    texte: "La fiche complète d'une tâche : statut, priorité, pilote, échéances, récurrence, sous-tâches, fichiers joints et commentaires datés. La vue Mes tâches trie tout automatiquement, et l'IA locale structure vos tâches dictées — rien ne part dans le cloud.",
+  },
+  {
+    n: 3,
+    titre: "Les projets : tableau, Kanban, calendrier",
+    duree: "2 min 30",
+    texte: "Un projet se pilote en trois vues : le tableau hiérarchique avec sous-projets, le Kanban en glisser-déposer, et le calendrier qui rassemble tâches et réunions — mois, semaine ouvrée, jour, avec replanification par simple glissement.",
+  },
+  {
+    n: 4,
+    titre: "La charge d'équipe",
+    duree: "26 s",
+    texte: "En un écran, les tâches ouvertes de chaque membre, ventilées par échéance : en retard, cette semaine, plus tard. Réservée aux managers et au propriétaire du compte.",
+  },
+  {
+    n: 5,
+    titre: "Planifier une réunion, avec visio intégrée",
+    duree: "2 min 35",
+    texte: "Titre, description, créneau, invités — internes ou externes, sans compte. Le lien de visioconférence est généré automatiquement, les invitations partent par email avec réponse en un clic, et la réunion s'ouvre directement dans PilotAI.",
+  },
+  {
+    n: 6,
+    titre: "Enregistrement et compte rendu automatique",
+    duree: "1 min 50",
+    texte: "L'enregistrement est annoncé aux participants, la transcription tourne en France sur nos serveurs, et le compte rendu arrive en quelques minutes. Vous relisez, corrigez, complétez en langage naturel — puis validez : l'audio est détruit.",
+  },
+  {
+    n: 7,
+    titre: "Des réunions aux tâches validées",
+    duree: "3 min 20",
+    texte: "Après chaque réunion, l'IA propose des actions : tâches, réunions, échéances. Rien ne se crée sans votre accord — vous validez, ajustez, assignez à un projet partagé ou en sous-tâche. Le même circuit s'applique à vos mails tagués PilotAI.",
+  },
+  {
+    n: 8,
+    titre: "Paramètres, confidentialité et équipe",
+    duree: "4 min 30",
+    texte: "Thèmes et couleurs, logo d'entreprise, signature d'email, abonnement de votre agenda Google, Outlook ou Apple, partage de disponibilités sur consentement, choix du moteur IA local ou cloud, export et effacement RGPD, et gestion de l'équipe avec ses rôles.",
+  },
+];
+---
+
+<Layout
+  title="PilotAI en détail — visite guidée en 8 vidéos"
+  description="Toutes les fonctions de PilotAI montrées à l'écran et commentées : tableau de bord, idées, tâches, projets, réunions avec visio et compte rendu automatique, charge d'équipe, paramètres et RGPD."
+>
+  <Header />
+
+  <main class="flex-1">
+    <section class="relative overflow-hidden bg-alliance-dark-2 pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-alliance-blue/10 via-transparent to-transparent"></div>
+      <div class="relative max-w-4xl mx-auto text-center">
+        <p class="text-alliance-blue text-sm font-bold uppercase tracking-widest mb-3">Visite guidée</p>
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+          PilotAI en détail, <span class="gradient-text">écran par écran</span>
+        </h1>
+        <p class="text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
+          Huit courtes vidéos commentées pour tout voir : la gestion de projet au quotidien,
+          les réunions enregistrées et leurs comptes rendus, et les réglages qui gardent
+          vos données sous votre contrôle.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-alliance-dark-2">
+      <div class="max-w-4xl mx-auto space-y-12">
+        {videos.map((v) => (
+          <article id={`video-${v.n}`} class="relief-panel relief-1 p-6 sm:p-8">
+            <div class="flex items-baseline justify-between gap-4 mb-2">
+              <h2 class="font-display text-xl sm:text-2xl font-bold text-white">
+                <span class="text-alliance-blue mr-2">{v.n}.</span>{v.titre}
+              </h2>
+              <span class="text-white/40 text-sm whitespace-nowrap">{v.duree}</span>
+            </div>
+            <p class="text-white/60 leading-relaxed mb-5">{v.texte}</p>
+            <video
+              controls
+              preload="metadata"
+              class="w-full rounded-xl border border-white/10 bg-black"
+              src={`/videos/decouverte/pilotai-${v.n}.mp4`}
+            ></video>
+          </article>
+        ))}
+
+        <div class="text-center pt-4">
+          <a href="/#demo" class="btn-primary text-base px-8 py-4 inline-block">
+            Démarrer l'essai gratuit de 14 jours
+          </a>
+          <p class="text-white/40 text-sm mt-4">
+            Ou revoir la <a href="/#video" class="text-alliance-blue hover:underline">présentation générale en 3 minutes</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
